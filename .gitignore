@@ -1,2 +1,3 @@
-node_modules/
-config/dev.js
+src/node_modules/
+src/config/dev.js
+.DS_Store
