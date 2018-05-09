@@ -22,6 +22,11 @@ var DecisionSchema = new Schema(
     		validator : Number.isInteger
   		}
     },
+    // subject of study (e.g. Computer Science)
+    subject: {
+    	type: String,
+    	required: true,
+    }
     program: {
     	type: String, 
     	required: true, 
@@ -67,5 +72,7 @@ var DecisionSchema = new Schema(
     	min: 0.0,
     	max: 6.0
     },
-  }
-);
+
+});
+// export model
+module.exports = mongoose.model('Decision', DecisionSchema);
