@@ -26,7 +26,7 @@ var DecisionSchema = new Schema(
     subject: {
     	type: String,
     	required: true,
-    }
+    },
     program: {
     	type: String, 
     	required: true, 
@@ -54,7 +54,7 @@ var DecisionSchema = new Schema(
     gre_verbal: {
     	type: Number,
     	min: 130,
-    	max: 170
+    	max: 170,
     	validate: {
     		validator : Number.isInteger
   		}
@@ -62,7 +62,7 @@ var DecisionSchema = new Schema(
     gre_quant: {
     	type: Number,
     	min: 130,
-    	max: 170
+    	max: 170,
     	validate: {
     		validator : Number.isInteger
   		}
