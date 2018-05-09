@@ -6,7 +6,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var scraper = require('./libs/scraper');
-var dbConfig = require('./config/dev');
+var dbConfig = require('./config/application');
 
 var app = express();
 
