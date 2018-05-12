@@ -10,4 +10,7 @@ router.get('/institutions', decisionController.institutionList);
 // GET request for getting all decisions for a specific institution
 router.get('/institutions/:name', decisionController.institutionDecisions);
 
-module.exports = router;
+// GET request for getting all decisions for a specific institution and program type
+router.get('/institutions/:school/program/:program', decisionController.institutionDecisions);
+
+module.exports = router;	
