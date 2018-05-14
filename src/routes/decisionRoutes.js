@@ -11,6 +11,6 @@ router.get('/institutions', decisionController.institutionList);
 router.get('/institutions/:name', decisionController.institutionDecisions);
 
 // GET request for getting all decisions for a specific institution and program type
-router.get('/institutions/:school/program/:program', decisionController.institutionDecisions);
+router.get('/institutions/:school/program/:program', decisionController.institutionProgramDecisions);
 
 module.exports = router;	
