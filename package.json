@@ -18,7 +18,8 @@
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11",
     "request": "^2.85.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "yarn": "^1.6.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.4"
