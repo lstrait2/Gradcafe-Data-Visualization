@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var scraper = require('./libs/scraper');
-var dbConfig = require('./config/application');
+//var dbConfig = require('./config/application');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var decisions = require('./routes/decisionRoutes');
@@ -12,7 +12,7 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = process.env.MONGODB_URI || 'mongodb://' + dbConfig.user +':' + dbConfig.pass + '@ds119660.mlab.com:19660/gradcafe_results'
+var mongoDB = process.env.MONGODB_URI
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
